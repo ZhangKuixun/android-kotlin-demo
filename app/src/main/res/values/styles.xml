@@ -1,39 +1,34 @@
 <resources>
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primary_dark</item>
-        <item name="colorAccent">@color/accent</item>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.FullScreen">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
-    <style name="AppThemeTransparentStatusBar" />
-
-    <style name="PrimaryTextStyle">
-        <item name="android:fontFamily">@string/sans_serif</item>
-        <item name="android:textColor">@color/primary_text</item>
-        <item name="android:textSize">@dimen/primary_font_size</item>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="overlapAnchor">false</item>
     </style>
 
-    <style name="SecondaryTextStyle">
-        <item name="android:fontFamily">@string/sans_serif_light</item>
-        <item name="android:textColor">@color/secondary_text</item>
-        <item name="android:textSize">@dimen/secondary_font_size</item>
-    </style>
-
-    <style name="HorizontalDividerStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/divider_size</item>
-        <item name="android:background">@color/divider</item>
-    </style>
-
-    <style name="VerticalDividerStyle">
-        <item name="android:layout_width">@dimen/divider_size</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@color/divider</item>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlActivated">#FFD400</item>
+        <item name="colorControlNormal">@android:color/darker_gray</item>
     </style>
 
 </resources>

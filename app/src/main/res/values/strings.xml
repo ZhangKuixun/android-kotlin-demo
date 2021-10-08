@@ -1,15 +1,6 @@
 <resources>
+    <string name="app_name">Kotlin</string>
 
-    <string name="app_name">Kotlin Demo</string>
-
-    <string name="sans_serif">sans-serif</string>
-    <string name="sans_serif_light">sans-serif-light</string>
-    <string name="sans_serif_black">sans-serif-black</string>
-    <string name="sans_serif_medium">sans-serif-medium</string>
-
-    <string name="error">Error</string>
-
-    <string name="search_repositories">Search repositories…</string>
-    <string name="search_repositories_error">Error performing search, disabling search field.</string>
-
+    <string name="text_loading">正在拼命加载中...</string>
+    <string name="text_no_score">暂无评分</string>
 </resources>
