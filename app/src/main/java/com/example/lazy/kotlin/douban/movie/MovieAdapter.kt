@@ -23,7 +23,7 @@ import org.jetbrains.anko.startActivity
 class MovieAdapter : RecyclerView.Adapter<MovieViewHolder>() {
     lateinit var context: Context
 
-    val movies: Array<String> = ResUtil.getStringArray(R.array.movie_list)
+    private val movies: Array<String> = ResUtil.getStringArray(R.array.movie_list)
 
     val movieResourcesProperties: MutableList<MovieResourcesProperties> = mutableListOf()
 

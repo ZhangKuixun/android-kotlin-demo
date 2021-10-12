@@ -24,14 +24,14 @@ class MainActivity : BaseActivity() {
 
     override fun setupViews() {
         super.setupViews()
-        setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar)
         viewPager.adapter = object : FragmentPagerAdapter(supportFragmentManager) {
 
-            override fun getItem(position: Int): Fragment = fragments.get(position)
+            override fun getItem(position: Int): Fragment = fragments[position]
 
             override fun getCount(): Int = titleTabsArray.size
 
-            override fun getPageTitle(position: Int): CharSequence = titleTabsArray.get(position)
+            override fun getPageTitle(position: Int): CharSequence = titleTabsArray[position]
         }
         tabs.setupWithViewPager(viewPager)
         viewPager.currentItem = 0

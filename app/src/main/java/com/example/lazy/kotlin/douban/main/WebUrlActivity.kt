@@ -1,5 +1,6 @@
 package com.example.lazy.kotlin.douban.main
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.webkit.WebChromeClient
 import android.webkit.WebView
@@ -11,9 +12,10 @@ import kotlinx.android.synthetic.main.activity_web_url.*
 
 class WebUrlActivity : AppCompatActivity() {
     companion object {
-        val EXTRA_URL = "url"
+        const val EXTRA_URL = "url"
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_web_url)

@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -43,8 +43,8 @@ dependencies {
 //        exclude group: 'com.android.support'
 //    }) // if you use the support libraries
 //    kapt('com.google.dagger:dagger-android-processor:2.11', {})
-    provided 'org.glassfish:javax.annotation:10.0-b28'
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+    api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

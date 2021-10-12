@@ -11,7 +11,7 @@ import javax.inject.Singleton
  * Created by lazy on 2017/7/10.
  */
 @Module
-class ApplicationModule(val _application: Application) : ApplicationRule {
+class ApplicationModule(private val _application: Application) : ApplicationRule {
 
     override val application: Application
         @Provides

@@ -18,7 +18,7 @@ class MovieFragment : BaseFragment(), MovieConstant.MovieView {
 
     override var layoutId: Int = R.layout.fragment_movie
 
-    val moviePresenter: MoviePresenter = MoviePresenter()
+    private val moviePresenter: MoviePresenter = MoviePresenter()
     lateinit var movieAdapter: MovieAdapter
 
 

@@ -17,7 +17,7 @@ import org.jetbrains.anko.find
 /**
  * Created by lazy on 2017/7/18.
  */
-class MovieChildrenAdapter(val movieResourcesProperties: MovieResourcesProperties) : RecyclerView.Adapter<MovieChildrenViewHolder>() {
+class MovieChildrenAdapter(private val movieResourcesProperties: MovieResourcesProperties) : RecyclerView.Adapter<MovieChildrenViewHolder>() {
 
 
     override fun getItemCount(): Int = movieResourcesProperties.count

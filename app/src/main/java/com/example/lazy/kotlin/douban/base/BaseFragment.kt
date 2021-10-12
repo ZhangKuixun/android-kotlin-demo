@@ -20,7 +20,7 @@ import org.jetbrains.anko.support.v4.ctx
 
 abstract class BaseFragment : RxFragment(), BaseViewInterface {
 
-    protected var mRootView: View? = null
+    private var mRootView: View? = null
 
     protected abstract val layoutId: Int @LayoutRes get
 
@@ -29,7 +29,7 @@ abstract class BaseFragment : RxFragment(), BaseViewInterface {
         if (mRootView == null) {
             val ankoComponent = ankoComponent<BaseFragment>()
             if (ankoComponent == null) {
-                mRootView = inflater?.inflate(layoutId, container, false)
+                mRootView = inflater.inflate(layoutId, container, false)
             } else {
                 mRootView = ankoComponent.createView(AnkoContext.create(ctx, this))
             }

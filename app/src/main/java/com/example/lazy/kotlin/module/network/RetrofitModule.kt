@@ -12,14 +12,14 @@ import retrofit2.converter.scalars.ScalarsConverterFactory
  */
 object RetrofitModule {
 
-    val douBanApiService by lazy { retrofit().create(DouBanApiService::class.java) }
+    val douBanApiService: DouBanApiService by lazy { retrofit().create(DouBanApiService::class.java) }
 
-    fun defaultOkHttpClient(): OkHttpClient {
+    private fun defaultOkHttpClient(): OkHttpClient {
         val builder = OkHttpClient.Builder()
         return builder.build()
     }
 
-    fun retrofit(): Retrofit {
+    private fun retrofit(): Retrofit {
         return Retrofit.Builder()
                 .baseUrl(DOU_BAN_API)
                 .addConverterFactory(ScalarsConverterFactory.create())
