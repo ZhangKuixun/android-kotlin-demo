@@ -9,8 +9,6 @@ apply plugin: 'idea'
 
 android {
     compileSdkVersion 30
-
-
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 30
