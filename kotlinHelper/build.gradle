@@ -8,7 +8,7 @@ apply plugin: 'kotlin-kapt'
 
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 28
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 30
@@ -41,7 +41,7 @@ dependencies {
     api "org.jetbrains.anko:anko-sdk25-coroutines:$anko_version"
     api "org.jetbrains.anko:anko-appcompat-v7-coroutines:$anko_version"
     testImplementation 'junit:junit:4.12'
-//    compile project(':dagger2Library')
+//    api project(':dagger2Library')
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
